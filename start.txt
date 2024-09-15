@@ -1,0 +1,11 @@
+MUSISZ MIEC POBRANE I DODANE DO PATH SQLITE
+show and run commands (ctrl shift P)
+python create environment venv
+python select interpreter reccomended
+terminal 
+pip install flask
+pip install flask_sqlalchemy
+(idk actually) zrób plik RP.db w folderze RP
+w terminalu: python run readerRP.py
+zrób folder instance i daj tam RB.db
+w terminalu: flask run
