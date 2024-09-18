@@ -19,8 +19,9 @@ def search():
     q = request.args.get("q")
     print(q)
 
-    if q:
-        results = Leki.query.filter(Leki.NazwaProduktuLeczniczego.icontains(q)) 
+    if len(q)>=4:
+        resultsALL = list(Leki.query.filter(Leki.NazwaProduktuLeczniczego.icontains(q)))
+        results = resultsALL[:10]
     else:
         results = []
 
